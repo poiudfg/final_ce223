@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลสลากกินแบ่งรัฐบาล 16 เมษายน</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> 
+        <a href="/check_midmar">16 มีนาคม</a> 
+        <a href="/check_earlyapril">1 เมษายน</a> 
+        <a href="/check_midapril">16 เมษายน</a> 
+        <a href="/credits">credits</a> 
+    </nav>
+    <h2>วันที่ 16 เมษายน 2565</h2>
+    <a href="/add_midapril">เพิ่มรางวัล</a>
+    <form action="/check_earlyapril" method="post">
+        <div>
+            <label>เช็คเลขสลาก :</label>
+            <input type="text" name="pass" id="pass">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+       <% midapril.forEach(function(item) { %>
+            <a><%= item.pass %></a>
+            <a><%= item.reward %></a>
+       </br>
+        <% }) %>
+</body>
+</html>
